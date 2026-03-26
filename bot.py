@@ -3,10 +3,10 @@ import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
-# --- НАСТРОЙКИ (читаем из переменных окружения) ---
+# --- Читаем токен и ID из переменных окружения ---
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHANNEL_ID = os.environ.get("CHANNEL_ID")
-# -------------------------------------------------
+# ------------------------------------------------
 
 logging.basicConfig(level=logging.INFO)
 
